@@ -1,5 +1,6 @@
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
+const password_value = document.querySelector("#password").value;
 const error_message = document.querySelector(".error");
 const submit_form = document.querySelector("#login-form");
 
@@ -20,5 +21,7 @@ submit_form.addEventListener("submit", (e) => {
 
   error_message.innerHTML = "You're logged in.";
 
-  error_message.style.color = "green";
+  submit_form.style.border = "2px solid #4caf50";
+
+  error_message.style.color = "#4caf50";
 });
