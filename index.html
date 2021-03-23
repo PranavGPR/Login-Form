@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Sign In</title>
-</head>
-<body>
-    <div class="login-box">
-        <h1>Login</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="container">
+      <form class="login-box" id="login-form">
+        <div class="heading-container">
+          <h1>Login</h1>
+        </div>
+
+        <p class="error"></p>
 
         <div class="textbox">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Username">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input type="text" placeholder="Username" id="username" />
         </div>
 
         <div class="textbox">
-            <i class="fa fa-lock" aria-hidden="true"></i>
-            <input type="password" placeholder="Password">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input type="password" placeholder="Password" id="password" />
         </div>
 
-        <button type="submit" class="btn">Sign In</button>
-        
-    </div>
-</body>
+        <div class="checkbox">
+          <input type="checkbox" id="confirmation-check" />Remember Me
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
